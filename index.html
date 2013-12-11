@@ -8,7 +8,7 @@
     <meta name="description" content="Prezentácia - HTML5 - predmet Multimedálne Systémy - Technická Univerzita v Košiciach" />
     <meta name="author" content="Matej 'yin' Gagyi" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="html5-presentation.css" rel="stylesheet" />
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -20,31 +20,31 @@
 </div>
 
 <div id="impress">
-	<div id="HTML5" class="step" data-x=-1500 data-y=-1000>
+	<div id="intro" class="step" data-x=-1500 data-y=-1000>
 	    <h1>HTML5</h1>
 	    <h3>Odpoveď Webu na Multimédiá</h3>
 	</div>
 	
-	<div class="step" data-x=-500 data-y=-1000>
+	<div id="html" class="step" data-x=-500 data-y=-1000>
 		<h2>HTML | Čo to je?</h2>
 		<q>Jazyk webu - text a 'znacky'</q>
 		<img src="images/html.png" />
 	</div>
 
-	<div class="step" data-x=500 data-y=-1000>
+	<div id="html5" class="step" data-x=500 data-y=-1000>
 		<h2>HTML5 | Čo je zas toto?</h2>
 		<q>Nova doba, novy Web</q>
 		<p>HTML + CSS + JS + extras</p>
 	</div>
 
-	<div class="step" data-x=-1500 data-y=0>
+	<div id="audio" class="step" data-x=-1500 data-y=0>
 		<h2>HTML5 | &lt;audio&gt;</h2>
 		<audio src="/content/good_enough.mp3" controls>
       <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
 	</div>
 
-	<div class="step" data-x=-500 data-y=0>
+	<div id="video" class="step" data-x=-500 data-y=0>
 		<h2>HTML5 | &lt;video&gt;</h2>
     <video id="plainIFrame" width="472" height="264" preload="metadata" controls poster="http://leanbackplayer.com/videos/poster/elephants_dream_640x360.jpg">
       <!-- html5-video sources -->
@@ -52,29 +52,48 @@
     </video>
 	</div>
 
-	<div class="step" data-x=500 data-y=0>
+	<div id="canvas" class="step" data-x=1500 data-y=500  data-scale="4">
 		<h2>HTML5 | &lt;canvas&gt;</h2>
+		<canvas width="500" height="500">
+	</div>
+	
+	<div id="javascript" class="step" data-x=1500 data-y=2000  data-scale="4">
+		<h1 class="medium">JavaScript</h1>
 	</div>
 	
 	<div id="css" class="step vertical" data-x=-500 data-y=-1000 data-z="350" data-rotate-x="-75" data-scale="3">
 		<h1 class="big">CSS3</h1>
 	</div>
 	
-	<div id="css-details" class="step vertical" data-x=-500 data-y=-1000 data-z="1850" data-rotate-x="-90" data-scale="3">
+	<div id="css-bullets" class="step vertical" data-x=-500 data-y=-1000 data-z="1850" data-rotate-x="-90" data-scale="3">
 		<ul>
 		  <li>Modularizacia</li>
 		  <li>Transformacie</li>
-		  <li>3D spatializaciu</li>
+		  <li>3D efekty</li>
+		  <li>... tato prezentacia je 95% CSS3</li>
 		</ul>
 	</div>
 
 	<div id="last" class="step" data-x=3000 data-y=0 data-z=750 data-rotate-x="-90" data-rotate-y="-75" data-scale="8">
-		<h1 class="medium">HTML5</h1>
+		<h1 class="medium vertical">HTML5</h1>
 	</div>
 
-	<div id="thanks" class="step" data-x=3000 data-y=0 data-z=750 data-rotate-x="-90" data-rotate-y="-75" data-scale="0.5">
-	  <p>Dakujem(e)</p>
+	<div id="thanks" class="step" data-x=4000 data-y=0 data-z=750 data-rotate-x="-90" data-rotate-y="-75" data-scale="0.5">
+	  <p>Dakujem za pozornost</p>
 	  <q>Matej Gagyi 2013 (TUKE)</q>
+	</div>
+
+	<div id="sources" class="step" data-x=0 data-y=0 data-z="10000" data-scale="1">
+	  <h3>Zdroje</p>
+    <img src="content/html5logo.svg" class="sideimg"/>
+	  <ul>
+	    <li><a href="http://www.w3.org/TR/html5/">W3C standard HTML5</a></li>
+	    <li><a href="http://www.w3.org/standards/webdesign/">W3C webdesign standards</a></li>
+	    <li><a href="http://www.leanbackplayer.com/example_iframe.html">HTML5 &lt;video&gt; Iframe examples</a></li>
+	    <li><a href="http://www.quackit.com/html_5/tags/html_audio_tag.cfm">HTML 5 &lt;audio&gt; Tag</a></li>
+	    <li><a href="http://bartaz.github.io/impress.js/#/bored">Impress.js</a></li>
+	    <li><img src="content/mdn_logo-wordmark-full_white.svg"/> <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a></li>
+	  </ul>
 	</div>
 
 </div>
